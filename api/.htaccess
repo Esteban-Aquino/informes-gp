@@ -1,0 +1,19 @@
+RewriteEngine on
+RewriteCond %{SCRIPT_FILENAME} !-d
+RewriteCond %{SCRIPT_FILENAME} !-f
+Rewriterule ^validar$ validarUsuario.php
+Rewriterule ^getventasayer$ GetVentasAyer.php
+Rewriterule ^getventasdia$ GetVentasDia.php
+Rewriterule ^getventasmes$ GetVentasMes.php
+Rewriterule ^getrentaanio$ GetRentaAnio.php
+Rewriterule ^getunidadesmes$ GetUnidadesMes.php
+Rewriterule ^getticketsmes$ GetTicketsMes.php
+Rewriterule ^getmontopromticketsmes$ GetMontoPromTicketsMes.php
+
+Rewriterule ^getdetalleventasdia$ GetDetalleVentasdia.php
+Rewriterule ^getdetalleventasayer$ GetDetalleVentasAyer.php
+Rewriterule ^getventasmarca$ GetVentasMarca.php
+Rewriterule ^getDetallementasrubro$ GetDetalleVentasRubro.php
+Rewriterule ^GetDetalleVentasVendedor$ GetDetalleVentasVendedor.php
+
+

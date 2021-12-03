@@ -1,0 +1,242 @@
+<!--
+/**
+ * Autor: Esteban Aqiono
+ * Fecha: 30/09/2018
+ * Descripcion: Dashboards ventas
+ */
+-->
+<link href="frm/dashboard/css/estilos.css" rel="stylesheet" type="text/css"/>
+<div>
+    <!-- Ventas Ayer -->
+    <div class="col-md-2 col-sm-4 col-xs-6 tile_stats_count">
+        <div id="ventas_ayer" class="x_panel">
+            <div class="x_title">
+                <span class="count_top"> <b>Ventas Ayer</b></span>
+            </div>
+            <div class="centrado" id="cargando-ventas-ayer">
+                <div class="loadingCircle"></div>
+            </div>
+            <div id="div-ventas-ayer" class="centrado oculto-d">
+                <div id="dia_ayer">&nbsp;</div>
+                <div id="monto_ventas_ayer" class="count nro">0</div>
+                <div><span class="count_bottom"> Millones de Gs</span></div>
+                <div>
+                    <span class="count_bottom centrado">
+                        <i id="ventas_ayer_color" class="grey">
+                            <i id="ventas_ayer_flecha" class="fa fa-unsorted"></i>
+                            <label id="porc_ventas_ayer">0%</label> </i>
+                    </span>
+                </div>   
+            </div>
+            <div class="divider"></div>
+            <div id="div-ventas-ayer-past" class="centrado oculto-d">
+                <div id="dia_ayer_past">&nbsp;</div>
+                <span class="count_bottom">
+                    <i>Año Pasado: <label id="monto_ventas_ayer_anio_past" class="nro">0</label></i>
+                </span>
+            </div>
+
+        </div>
+    </div>
+    <!-- /Ventas Ayer -->
+
+    <!-- Ventas Hoy -->
+    <div class="col-md-2 col-sm-4 col-xs-6 tile_stats_count">
+        <div id="ventas_dia" class="x_panel">
+            <div class="x_title">
+                <span class="count_top"> <b>Ventas Hoy</b></span>
+            </div>
+            <div class="centrado" id="cargando-ventas-dia">
+                <div class="loadingCircle"></div> 
+            </div>
+            <div id="div-ventas-dia" class="centrado oculto-d">
+                <div id="dia">&nbsp;</div>
+                <div id="monto_ventas_dia" class="count nro">0</div>
+                <div><span class="count_bottom"> Millones de Gs</span></div>
+                <div>
+                    <span class="count_bottom centrado">
+                        <i id="ventas_dia_color" class="grey">
+                            <i id="ventas_dia_flecha" class="fa fa-unsorted"></i>
+                            <label id="porc_ventas_dia">0%</label> </i>
+                    </span>
+                </div>   
+            </div>
+            <div class="divider"></div>
+            <div id="div-ventas-dia-past" class="centrado oculto-d">
+                <div id="dia_past">&nbsp;</div>
+                <span class="count_bottom">
+                    <i>Año Pasado: <label id="monto_ventas_dia_anio_past" class="nro">0</label></i>
+                </span>
+            </div>
+
+        </div>
+    </div>
+    <!-- /Ventas Hoy -->
+
+    <!-- Ventas Mes -->
+    <div class="col-md-2 col-sm-4 col-xs-6 tile_stats_count">
+        <div id="ventas_mes" class="x_panel">
+            <div class="x_title">
+                <span class="count_top"> <b>Ventas Mes</b></span>
+            </div>
+            <div class="centrado" id="cargando-ventas-mes">
+                <div class="loadingCircle"></div> 
+            </div>
+            <div id="div-ventas-mes" class="centrado oculto-d">
+                <div id="mes">&nbsp;</div>
+                <div id="monto_ventas_mes" class="count nro">0</div>
+                <div><span class="count_bottom"> Millones de Gs</span></div>
+                <div>
+                    <span class="count_bottom centrado">
+                        <i id="ventas_mes_color" class="grey">
+                            <i id="ventas_mes_flecha" class="fa fa-unsorted"></i>
+                            <label id="porc_ventas_mes">0%</label> </i>
+                    </span>
+                </div>   
+            </div>
+            <div class="divider"></div>
+            <div id="div-ventas-mes-past" class="centrado oculto-d">
+                <div id="mes_past">&nbsp;</div>
+                <span class="count_bottom">
+                    <i>Año Pasado: <label id="monto_ventas_mes_anio_past" class="nro">0</label></i>
+                </span>
+            </div>
+
+        </div>
+    </div>
+    <!-- /Ventas Mes -->
+
+    <!-- Renta Anio -->
+    <div class="col-md-2 col-sm-4 col-xs-6 tile_stats_count">
+        <div id="renta_anio" class="x_panel">
+            <div class="x_title">
+                <span class="count_top"> <b>Renta Bruta Año</b></span>
+            </div>
+            <div class="centrado" id="cargando-renta-anio">
+                <div class="loadingCircle"></div> 
+            </div>
+            <div id="div-renta-anio" class="centrado oculto-d">
+                <div id="anio">&nbsp;</div>
+                <div id="monto-renta-anio" class="count nro">0</div>
+                <div><span class="count_bottom"> % Renta </span></div>
+                <div>
+                    <span class="count_bottom centrado">
+                        <i id="renta-anio-color" class="grey">
+                            <i id="renta-anio-flecha" class="fa fa-unsorted"></i>
+                            <label id="porc-renta-anio">0%</label> </i>
+                    </span>
+                </div>   
+            </div>
+            <div class="divider"></div>
+            <div id="div-renta-anio-past" class="centrado oculto-d">
+                <div id="anio_past">&nbsp;</div>
+                <span class="count_bottom">
+                    <i>Año Pasado: <label id="monto-renta-anio-past" class="nro">0</label></i>
+                </span>
+            </div>
+
+        </div>
+    </div>
+    <!-- /Renta Anio -->
+
+    <!-- Unidades Mes -->
+    <div class="col-md-2 col-sm-4 col-xs-6 tile_stats_count">
+        <div id="unidades-mes" class="x_panel">
+            <div class="x_title">
+                <span class="count_top"> <b>Unidades Mes</b></span>
+            </div>
+            <div class="centrado" id="cargando-unidades-mes">
+                <div class="loadingCircle"></div> 
+            </div>
+            <div id="div-unidades-mes" class="centrado oculto-d">
+                <div id="mes_uni">&nbsp;</div>
+                <div id="monto-unidades-mes" class="count gs">0</div>
+                <div><span class="count_bottom"> Unidades </span></div>
+                <div>
+                    <span class="count_bottom centrado">
+                        <i id="unidades-mes-color" class="grey">
+                            <i id="unidades-mes-flecha" class="fa fa-unsorted"></i>
+                            <label id="porc-unidades-mes">0%</label> </i>
+                    </span>
+                </div>   
+            </div>
+            <div class="divider"></div>
+            <div id="div-unidades-mes-past" class="centrado oculto-d">
+                <div id="mes_uni_past">&nbsp;</div>
+                <span class="count_bottom">
+                    <i>Año Pasado: <label id="monto-unidades-mes-past" class="gs">0</label></i>
+                </span>
+            </div>
+
+        </div>
+    </div>
+    <!-- /Unidades Mes  -->    
+
+    <!-- Tickets Mes -->
+    <div class="col-md-2 col-sm-4 col-xs-6 tile_stats_count">
+        <div id="tickets-mes" class="x_panel">
+            <div class="x_title">
+                <span class="count_top"> <b>Tickets Mes</b></span>
+            </div>
+            <div class="centrado" id="cargando-tickets-mes">
+                <div class="loadingCircle"></div> 
+            </div>
+            <div id="div-tickets-mes" class="centrado oculto-d">
+                <div id="mes_tic">&nbsp;</div>
+                <div id="cant-tickets-mes" class="count gs">0</div>
+                <div><span class="count_bottom"> Tickets </span></div>
+                <div>
+                    <span class="count_bottom centrado">
+                        <i id="tickets-mes-color" class="grey">
+                            <i id="tickets-mes-flecha" class="fa fa-unsorted"></i>
+                            <label id="porc-tickets-mes">0%</label> </i>
+                    </span>
+                </div>   
+            </div>
+            <div class="divider"></div>
+            <div id="div-tickets-mes-past" class="centrado oculto-d">
+                <div id="mes_tic_past">&nbsp;</div>
+                <span class="count_bottom">
+                    <i>Año Pasado: <label id="cant-tickets-mes-past" class="gs">0</label></i>
+                </span>
+            </div>
+
+        </div>
+    </div>
+    <!-- /Tickets Mes  -->    
+
+    <!-- Monto Promedio Tickets Mes -->
+    <div class="col-md-2 col-sm-4 col-xs-6 tile_stats_count">
+        <div id="monto-tickets-mes" class="x_panel">
+            <div class="x_title">
+                <span class="count_top"> <b>Monto Prom. Tickets Mes</b></span>
+            </div>
+            <div class="centrado" id="cargando-monto-tickets-mes">
+                <div class="loadingCircle"></div> 
+            </div>
+            <div id="div-monto-tickets-mes" class="centrado oculto-d">
+                <div id="mes_tic_prom">&nbsp;</div>
+                <div id="monto-monto-tickets-mes" class="count gs">0</div>
+                <div><span class="count_bottom"> Gs </span></div>
+                <div>
+                    <span class="count_bottom centrado">
+                        <i id="monto-tickets-mes-color" class="grey">
+                            <i id="monto-tickets-mes-flecha" class="fa fa-unsorted"></i>
+                            <label id="porc-monto-tickets-mes">0%</label> </i>
+                    </span>
+                </div>   
+            </div>
+            <div class="divider"></div>
+            <div id="div-monto-tickets-mes-past" class="centrado oculto-d">
+                <div id="mes_tic_prom_ant">&nbsp;</div>
+                <span class="count_bottom">
+                    <i>Año Pasado: <label id="monto-monto-tickets-mes-past" class="gs">0</label></i>
+                </span>
+            </div>
+
+        </div>
+    </div>
+    <!-- /Monto Promedio Tickets Mes  -->
+
+</div>    
+<script src="frm/dashboard/js/funciones.js" type="text/javascript"></script>
